@@ -102,28 +102,101 @@
 // createArr(mass)
 
 //- Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
-obj1 = {
-    name:'asfsa',
-    key:'123'
-}
-obj2 = {
-    name:'asfsa',
-    key:'123'
-}
-obj3 = {
-    name:'asfsa',
-    key:'123'
-}
+// const obj1 = {
+//     name:'asfsa',
+//     key:'123'
+// }
+// const obj2 = {
+//     name:'asfsa',
+//     key:'123'
+// }
+// const obj3 = {
+//     name:'asfsa',
+//     key:'123'
+// }
+//
+// const mass = [obj1,obj2,obj3];
+//
+// const countObjectKeys = (array) => {
+//     let count = 0;
+//     for(let i=0;i <array.length; i++) {
+//         for(let key in array[i]) {
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
 
-mass = [obj1,obj2,obj3]
+// - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+// let mass1 = [1,2,3,4,5];
+// let mass2 = [3,4,5,6,7];
+//
+// function arrTogether(arr1, arr2){
+//     let countIter = 0;
+//     const arr1Length = arr1.length;
+//     const arr2Length = arr2.length;
+//
+//     if (arr1Length === arr2Length) {
+//         countIter = arr1Length
+//     } else if(arr1Length > arr2Length) {
+//         countIter = arr1Length - (arr1Length - arr2Length);
+//     } else {
+//         countIter = arr2Length - (arr2Length - arr1Length)
+//     }
+//
+//     const newArray = [];
+//
+//     for(let i=0; i< countIter; i++) {
+//         const arr1Value = arr1[i];
+//         const arr2Value = arr2[i];
+//
+//         newArray.push(arr1Value + arr2Value);
+//     }
+//
+//     return newArray;
+// }
+//
+// console.log(arrTogether(mass1, mass2));
 
-function createArr(arr) {
-    for (let arrElement of arr) {
-        console.log(arrElement)
-        for (let obj of arrElement) {
-            console.log(obj)
-        }
-    }
-}
-let arf = createArr(mass)
-console.log(arf)
+//- *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+
+//- *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// let mass1 = [1,0,2,3,0,5,6]
+//
+// function zeroInEnd(mass1){
+//     console.log(mass1);
+//
+//     for (let i = 0; i < mass1.length; i++) {
+//         if (mass1[i] === 0 ){
+//         let [element] = mass1.splice(i, 1);
+//          mass1.push(element)
+//         }
+//     }
+//
+//     console.log(mass1)
+// }
+// zeroInEnd(mass1);
+
+//- Додає в боді блок з текстом "Hello owu"
+// function addDiv(){
+//     let createDiv = document.createElement('div')
+//     createDiv.className = 'new-div';
+//     createDiv.style.width = '200px';
+//     createDiv.style.height = '200px';
+//     createDiv.innerText = 'hello owu'
+//     document.body.appendChild(createDiv)
+// }
+// addDiv()
+
+// //- Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+// function addDiv(){
+//     let createDiv = document.createElement('div')
+//     createDiv.className = 'new-div';
+//     createDiv.style.width = '200px';
+//     createDiv.style.height = '200px';
+//     createDiv.innerText = 'hello owu'
+//     document.body.appendChild(createDiv)
+// }
+// addDiv()
+
+//- приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів. Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
